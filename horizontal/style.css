@@ -1,0 +1,57 @@
+.emoji-holder{
+    padding-top: 200px;
+    max-width:420px;
+    min-width: 420px;
+    margin-bottom: -10px !important;
+    
+}
+.emojiFinger{
+    max-width:80px;
+    min-width:80px;
+    margin: 2px;
+    padding-top: 60px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: -3px;
+}
+.input-holder{
+    max-width: 420px !important;
+    position: fixed;
+}
+
+.emojiFinger:hover{
+   position: relative;
+   margin-top: -40px;
+   margin-bottom: -25px;
+   height: 100px;
+   border-top-width: 4px;
+   cursor: pointer;
+   animation-duration: 1s;
+   animation-name: bounce;
+}
+.emojiFinger:active{
+    position: relative;
+    margin-top: -55px;
+    margin-bottom: -20px;
+    height: 100px;
+    max-width: 90px;   
+    animation-name: pulse;
+    animation-duration: 1s;
+     
+ }
+ .emojiFinger:active>img{
+    width:35px;
+
+ }
+
+input{
+    width: 90% !important;
+    animation-name: flipInY;
+    animation-duration: 1s;
+}
+.emoji{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width:30px;
+}

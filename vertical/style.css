@@ -1,0 +1,74 @@
+#show{
+    width: 150px;
+}
+.emoji-holder{
+    padding-top: 2px;
+    width: 150px;
+    display: flex;
+}
+.image{
+    width:30px;
+}
+img{
+    width:30px;
+}
+span{
+    margin: 5px;
+}
+.card{
+    padding-top: 5px;
+    margin-top:5px !important ;
+    margin-bottom: 5px !important;
+}
+.emoji-holder:hover{
+    width: 170px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.emoji-holder:active{
+    background-color:#f4f4f4;
+    animation-name: shift;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+.emoji-holder:active>.image >img{
+    width: 33px;
+    animation-name: bounce;
+    animation-duration: .7s;
+}
+.emoji-holder:active>input{
+    width: 50px;
+}
+#show{
+    display: none;
+}
+#hover:hover~#show{
+    display: block;
+}
+#show:hover{
+    display: block;
+}
+#hover{
+    padding: 20px;
+    margin-left: -20px;
+    vertical-align: middle;
+    position: relative;
+    top:94px;
+}
+.holder{
+    
+    widows: 500px;
+}
+input{
+    width:0px;
+    display: none;
+}
+@keyframes shift {
+    0%{margin-left: 0px;}
+    10%{margin-left: 10px;}
+    20%{margin-left: 10px;}
+    30%{margin-left: 10px;}
+    100%{margin-left: 10px;}
+
+}
